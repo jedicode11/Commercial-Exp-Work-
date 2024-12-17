@@ -1,0 +1,23 @@
+/*
+  Definiert Breakpoint-Namen, um diese per JavaScript importieren zu können
+  vgl. https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript
+*/
+
+body {
+  &::before {
+    display: none;
+    content: 'xs';
+    @media (min-width: mq(sm, false)) {
+      content: 'sm';
+    }
+    @media (min-width: mq(md, false)) {
+      content: 'md';
+    }
+    @media (min-width: mq(lg, false)) {
+      content: 'lg';
+    }
+    @media (min-width: mq(xl, false)) {
+      content: 'xl';
+    }
+  }
+}

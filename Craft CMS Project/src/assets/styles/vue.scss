@@ -1,0 +1,12 @@
+// will be overwritten in css loader if VUE_APP_USE_SERVER_ASSET_PATH=1, see vue.config.js
+$finder-font-path-source-sans-pro: '/fonts' !default;
+
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+@import '01-abstracts/variables';
+@import '01-abstracts/functions';
+@import '01-abstracts/z-index';
+@import '01-abstracts/mixins';
+@import '02-base/typography';

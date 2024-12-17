@@ -1,0 +1,46 @@
+/*
+ * This is the central place to keep track of z-index values across all partials.
+ * Anything that relies on z-index values for proper positioning gets an entry in
+ * the z-index map.
+ *
+ * Assigning a z-index to an element looks like this:
+ *
+ * .an-element {
+ *   z-index: z('an-element');
+ * }
+ *
+ * TRY TO ALWAYS USE THIS MAP INSTEAD OF CUSTOM VALUES IN YOUR CSS CODE (except for nested elements)
+ */
+
+// --------------------------------------------------
+
+/*
+ * sass map containing all the z-level values for all elements
+ */
+
+$z-layers: (
+  'content-modal' : 9990,
+  'myadmin-meta-bar' : 1000,
+  'meta-bar' : 900,
+  'mobile-menu' : 900,
+  'myadmin-meta-bar-mobile' : 800,
+  'editor-trigger' : 1,
+  'product-tile-play-button' : 1,
+  'product-tile-play-icon' : 2
+);
+
+// --------------------------------------------------
+
+/*
+ * function to access the values from the map
+ */
+
+@function z($layer) {
+  @if not map-has-key($z-layers, $layer) {
+    @warn 'No layer found for `#{$layer}` in $z-layers map. Property omitted.';
+  }
+
+  @return map-get($z-layers, $layer);
+}
+
+// --------------------------------------------------

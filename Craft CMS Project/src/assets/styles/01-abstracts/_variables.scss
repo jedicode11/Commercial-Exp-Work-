@@ -1,0 +1,127 @@
+@use 'sass:map';
+@use 'sass:color';
+@import 'functions';
+@import 'mixins';
+
+// will be overwritten in css loader if VUE_APP_NO_FONTS=1, see vue.config.js
+$finder-disable-font-loading: false !default;
+$finder-asset-path-font: 'https://sfs-widget.fairtrack.net/fonts';
+
+/** Colors **/
+// will be overwritten in css loader if VUE_APP_COLOR_PRIMARY is set, see vue.config.js
+$finder-color-primary: #861531 !default;
+// will be overwritten in css loader if VUE_APP_COLOR_SECONDARY is set, see vue.config.js
+$finder-color-secondary: #666666 !default;
+// will be overwritten in css loader if VUE_APP_COLOR_TINTING1 is set, see vue.config.js
+$finder-color-tinting1: #dcb1af !default;
+// will be overwritten in css loader if VUE_APP_COLOR_TINTING2 is set, see vue.config.js
+$finder-color-tinting2: #430a18 !default;
+// will be overwritten in css loader if VUE_APP_COLOR_SHADING1 is set, see vue.config.js
+$finder-color-shading1: #be7b83 !default;
+// will be overwritten in css loader if VUE_APP_COLOR_SHADING2 is set, see vue.config.js
+$finder-color-shading2: #c68a8f !default;
+// will be overwritten in css loader if VUE_APP_COLOR_SHADING3 is set, see vue.config.js
+$finder-color-shading3: #cf9a9c !default;
+// will be overwritten in css loader if VUE_APP_COLOR_SHADING is set, see vue.config.js
+$finder-color-shading: #d8a9a9 !default;
+
+/** Layout **/
+$grid-gutter-width: 1.25rem;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+$page-content-width: var(--finder-content-wrapper-max-width);
+$border-radius: 7px;
+$responsive-media: (
+  '1_1' : 100%,
+  '4_3' : 75%,
+  '16_9': 56.25%,
+  '21_9': 42.8571%
+);
+
+:root {
+  /** Outer width wrapper, will be overwritten in live env (cms stylesheet) **/
+  --finder-content-wrapper-max-width: 1174px;
+  --finder-content-wrapper-margin: 0;
+  --finder-content-wrapper-padding: 0;
+  --finder-content-wrapper-inner-width: auto;
+  --finder-content-wrapper-inner-padding: 0;
+
+  /** Content Modal size, will be overwritten in live env (cms stylesheet) **/
+  --finder-content-modal-max-width: 1080px;
+  --finder-content-modal-max-height: 800px;
+
+  /** Breakpoints, will be overwritten in live env (cms stylesheet) !used by vue JS code! **/
+  --finder-breakpoint-xs: #{map.get($grid-breakpoints, 'xs')};
+  --finder-breakpoint-sm: #{map.get($grid-breakpoints, 'sm')};
+  --finder-breakpoint-md: #{map.get($grid-breakpoints, 'md')};
+  --finder-breakpoint-lg: #{map.get($grid-breakpoints, 'lg')};
+  --finder-breakpoint-xl: #{map.get($grid-breakpoints, 'xl')};
+  --finder-breakpoint-xxl: #{map.get($grid-breakpoints, 'xxl')};
+
+  /** Typography **/
+  --finder-font-family-headline: 'Source Sans Pro', sans-serif;
+  --finder-font-family-content: 'Source Sans Pro', sans-serif;
+
+  /** Color 'Primary' **/
+  --finder-color-primary: #006eb7; // will be overwritten by fair stylesheet
+  --finder-color-primary-rgb: #{derive-rgb-values-from-hex(#006eb7)}; // will be overwritten by fair stylesheet
+  @include color-alpha-shade-vars(--finder-color-primary-rgb, --finder-color-primary, [1,.5,.25,.15,.1,.05]);
+  --finder-color-primary-hover: #{color.scale(#006eb7, $lightness: -15%)}; // will be overwritten by fair stylesheet
+  --finder-color-neutral-grey: #b1b6ba;
+  --finder-color-neutral-grey-hover: #969b9e;
+
+  /** Color 'White' **/
+  --finder-color-white: #fff;
+  @include color-alpha-shade-values(#fff, --finder-color-white, [1,.9,.75,.5,.25,.15,.1,.05]);
+  --finder-color-white-hover: #{color.scale(#fff, $lightness: -10%)};
+
+  /** Color 'Dark' **/
+  --finder-color-dark: #181818;
+  @include color-alpha-shade-values(#181818, --finder-color-dark, [1,.9,.75,.5,.25,.15,.1,.05]);
+  --finder-color-dark-deco: #242424;
+
+  /** Color 'Decoration' **/
+  --finder-color-light: #fff;
+  --finder-color-light-deco: #e7e7e7;
+  --finder-color-medium: #bababa;
+  --finder-color-medium-deco: #999;
+  --finder-color-background-deco: #eff1f2;
+
+  /** Color 'Support' **/
+  --finder-color-black-100: #000;
+  --finder-color-black-85: rgba(0, 0, 0, 0.85);
+  --finder-color-focus: rgba(162, 162, 162, 0.25);
+  --finder-color-modal-layer-bg: rgba(0, 0, 0, 0.25);
+  --finder-color-error: #ed6654;
+  --finder-color-error-hover: #{color.scale(#ed6654, $lightness: -15%)};
+  --finder-color-error-disabled: #{color.adjust(#ed6654, $alpha: -0.5)};
+  --finder-color-error-background: #{color.scale(#ed6654, $lightness: 75%)};
+  --finder-color-success: #5eb462;
+  --finder-color-success-hover: #{color.scale(#5eb462, $lightness: -15%)};
+  --finder-color-success-disabled: #{color.adjust(#5eb462, $alpha: -0.5)};
+  --finder-color-success-background: #{color.scale(#5eb462, $lightness: 75%)};
+  --finder-color-system: #eac11b;
+  --finder-color-system-hover: #{color.scale(#eac11b, $lightness: -15%)};
+  --finder-color-system-disabled: #{color.adjust(#eac11b, $alpha: -0.5)};
+  --finder-color-system-background: #{color.scale(#eac11b, $lightness: 75%)};
+
+  /** Components **/
+  --finder-metabar-height: 66px;
+  --finder-metabar-height-small: 44px;
+  --finder-mobile-menu-trigger-left: auto;
+  --finder-mobile-menu-trigger-right: 30px;
+  --finder-mobile-menu-trigger-bottom: 30px;
+}

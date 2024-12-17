@@ -1,0 +1,119 @@
+// see definitions at https://www.figma.com/file/UBD14Sn7Yd4VSWWa64DDWA/Messe---Component-Library?node-id=2%3A42
+
+// Regular
+
+@mixin headline-regular-51 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 51px;
+  line-height: 120%;
+  font-weight: 300;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-regular-42 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 42px;
+  line-height: 120%;
+  font-weight: 300;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-regular-26 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 26px;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-regular-19 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 19px;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-regular-16 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-regular-14 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-regular-12 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+// Bold
+
+@mixin headline-bold-51 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 51px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-bold-42 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 42px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-bold-26 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 26px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-bold-19 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 19px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-bold-16 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-bold-14 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin headline-bold-12 {
+  font-family: var(--finder-font-family-headline);
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+

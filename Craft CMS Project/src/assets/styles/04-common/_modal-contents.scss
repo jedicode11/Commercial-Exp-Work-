@@ -1,0 +1,55 @@
+@mixin finder-modal-shadow {
+  // @formatter:off
+  box-shadow:
+    0 100px 80px rgba(0, 0, 0, 0.07),
+    0 41px 33px rgba(0, 0, 0, 0.05),
+    0 22px 17px rgba(0, 0, 0, 0.04),
+    0 12px 10px rgba(0, 0, 0, 0.04),
+    0 6px 5px rgba(0, 0, 0, 0.03),
+    2px 2px rgba(0, 0, 0, 0.02);
+  // @formatter:on
+}
+
+@mixin finder-modal-title {
+  @include headline-regular-19;
+  @media (min-width: mq(md, false)) {
+    @include headline-regular-42;
+  }
+}
+
+@mixin finder-modal-section-title {
+  @include headline-regular-19;
+  margin-bottom: 16px;
+}
+
+@mixin finder-modal-section {
+  margin-bottom: 44px;
+  @media (min-width: mq(md, false)) {
+    margin-bottom: 71px;
+  }
+}
+
+@mixin finder-modal-text {
+  @include copy-text-regular-14;
+  @media (min-width: mq(md, false)) {
+    @include copy-text-regular-16;
+  }
+}
+
+@mixin finder-modal-width-wrap-outer($cols:12) {
+  @media (min-width: mq(md, false)) {
+    display: grid;
+    column-gap: $grid-gutter-width;
+    grid-template-columns: repeat($cols, 1fr);
+  }
+}
+
+@mixin finder-modal-width-wrap-inner($cols:10) {
+  @media (max-width: mq(md, true)) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (min-width: mq(md, false)) {
+    grid-column: 2 / span $cols;
+  }
+}

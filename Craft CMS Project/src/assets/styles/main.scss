@@ -1,0 +1,30 @@
+/* Global style sheet */
+
+/* Dependencies */
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+// @import '../../../node_modules/bootstrap/scss/maps';
+@import '../../../node_modules/bootstrap/scss/utilities';
+@import '../../../node_modules/bootstrap/scss/root';
+
+/* @import '../../../node_modules/bootstrap/scss/reboot'; */
+@import '../../../node_modules/bootstrap/scss/containers';
+@import '../../../node_modules/bootstrap/scss/grid';
+@import '../../../node_modules/bootstrap/scss/utilities/api';
+
+@import '../../../node_modules/keen-slider/keen-slider.css';
+
+/* Project styles */
+@import '01-abstracts/functions';
+@import '01-abstracts/variables';
+@import '01-abstracts/fonts';
+@import '01-abstracts/mq-import';
+@import '01-abstracts/z-index';
+
+@import '02-base/storybook';
+@import '02-base/normalize';
+@import '02-base/animations';
+@import '02-base/typography';
+@import '02-base/content-wrapper';
+@import '02-base/responsive-media';

@@ -1,0 +1,46 @@
+@import 'copy-types';
+
+@mixin text-link-states($color:var(--finder-color-dark-50), $hover-color:var(--finder-color-primary)) {
+  &:link,
+  &:visited,
+  &:active,
+  & {
+    color: $color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@mixin text-link-states-snackbar {
+  &:link,
+  &:visited,
+  &:active,
+  & {
+    color: var(--finder-color-white-50);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: var(--finder-color-primary);
+  }
+}
+
+@mixin text-link {
+  @include copy-text-regular-16;
+  @include text-link-states($color, $hover-color);
+}
+
+@mixin text-link-big($color:var(--finder-color-dark-50), $hover-color:var(--finder-color-primary)) {
+  @include copy-text-regular-19;
+  @include text-link-states($color, $hover-color);
+}
+
+@mixin text-link-small($color:var(--finder-color-dark-50), $hover-color:var(--finder-color-primary)) {
+  @include copy-text-regular-14;
+  @include text-link-states($color, $hover-color);
+}

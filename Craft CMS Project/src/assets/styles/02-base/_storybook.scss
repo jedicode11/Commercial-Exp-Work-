@@ -1,0 +1,4 @@
+@import '../02-base/typography/copy-types';
+.sb-show-main {
+  @include copy-text-regular-16;
+}

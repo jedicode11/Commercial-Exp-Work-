@@ -1,0 +1,11 @@
+.finder-content-wrapper {
+  max-width: var(--finder-content-wrapper-max-width);
+  margin: var(--finder-content-wrapper-margin);
+  padding: var(--finder-content-wrapper-padding);
+}
+
+.finder-content-wrapper__inner {
+  width: var(--finder-content-wrapper-inner-width);
+  // padding: var(--finder-content-wrapper-inner-padding);
+  // margin: auto;
+}

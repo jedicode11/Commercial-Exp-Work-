@@ -1,0 +1,27 @@
+@use 'sass:map';
+
+// set 'is-max-width' to true, if function's return value is used as a max-width in a media query
+// this will subtract 1 pixel from the return value, avoiding an 1px overlap of media queries
+// at next larger breakpoint's min-width
+@function mq($key, $is-max-width) {
+  @if map-has-key($grid-breakpoints, $key) {
+    @if $is-max-width {
+      @return map-get($grid-breakpoints, $key) - 1;
+    } @else {
+      @return map-get($grid-breakpoints, $key);
+    }
+  }
+  @return null;
+}
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map.get($map, $key);
+  }
+  @return $map;
+}
+
+// see https://blog.jim-nielsen.com/2019/generating-shades-of-color-using-css-variables/
+@function derive-rgb-values-from-hex($hex) {
+  @return red($hex), green($hex), blue($hex);
+}

@@ -1,0 +1,47 @@
+/* stylelint-disable */
+@if (not $finder-disable-font-loading) {
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-style: normal;
+    font-display: auto;
+    src: url('#{$finder-asset-path-font}/SourceSansPro-Light.eot');
+    src: url('#{$finder-asset-path-font}/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('#{$finder-asset-path-font}/SourceSansPro-Light_otf.woff') format('woff'),
+    url('#{$finder-asset-path-font}/SourceSansPro-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    src: url('#{$finder-asset-path-font}/SourceSansPro-Regular.eot');
+    src: url('#{$finder-asset-path-font}/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$finder-asset-path-font}/SourceSansPro-Regular_otf.woff') format('woff'),
+    url('#{$finder-asset-path-font}/SourceSansPro-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+    src: url('#{$finder-asset-path-font}/SourceSansPro-Semibold.eot');
+    src: url('#{$finder-asset-path-font}/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('#{$finder-asset-path-font}/SourceSansPro-Semibold_otf.woff') format('woff'),
+    url('#{$finder-asset-path-font}/SourceSansPro-Semibold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    font-style: normal;
+    font-display: auto;
+    src: url('#{$finder-asset-path-font}/SourceSansPro-Black.eot');
+    src: url('#{$finder-asset-path-font}/SourceSansPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('#{$finder-asset-path-font}/SourceSansPro-Black_otf.woff') format('woff'),
+    url('#{$finder-asset-path-font}/SourceSansPro-Black.ttf') format('truetype');
+  }
+}
+

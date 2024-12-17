@@ -1,0 +1,106 @@
+// set '$include-indeterminate-state' to 'false' when using this mixin for radiobuttons,
+// as unchecked radiobuttons have a 'indeterminate' state
+
+@mixin choice-element($include-indeterminate-state:true) {
+  --accent-color: var(--finder-color-primary);
+  --icon-color: var(--finder-color-dark-50);
+  --icon-opacity: 1;
+  --label-color: var(--finder-color-dark);
+
+  // display condition of each icon, determined later by input's state (checked & indeterminate)
+  --icon-display-checked: none;
+  --icon-display-unchecked: inline;
+  --icon-display-indeterminate: none;
+
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 6px;
+  cursor: pointer;
+
+  &--form-appearance {
+    --accent-color: var(--finder-color-dark);
+    --label-color: var(--finder-color-dark-50);
+  }
+
+  &__icon {
+    color: var(--icon-color);
+    opacity: var(--icon-opacity);
+    flex-shrink: 0;
+
+    &--not-checked {
+      display: var(--icon-display-unchecked);
+    }
+
+    &--checked {
+      color: var(--accent-color);
+      display: var(--icon-display-checked);
+    }
+
+    &--indeterminate {
+      display: var(--icon-display-indeterminate);
+    }
+  }
+
+  & > input {
+    @include sr-only;
+
+    &:checked ~ * {
+      --icon-display-checked: inline;
+      --icon-display-unchecked: none;
+      --icon-display-indeterminate: none;
+    }
+
+    @if $include-indeterminate-state {
+      &:indeterminate ~ * {
+        --icon-display-checked: none;
+        --icon-display-unchecked: none;
+        --icon-display-indeterminate: inline;
+      }
+    }
+
+    &:not([disabled]):checked {
+      ~ * {
+        --icon-color: var(--accent-color);
+        --label-color: var(--accent-color);
+      }
+    }
+  }
+
+  &--focused > input:not([disabled]),
+  & > input:not([disabled]):focus,
+  & > input:not([disabled]):focus-within {
+    &:not(:checked) ~ * {
+      --icon-color: var(--accent-color);
+    }
+
+    &:checked ~ *,
+    &:indeterminate ~ * {
+      --icon-opacity: 0.75;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    --accent-color: var(--finder-color-dark-15);
+    --icon-color: var(--finder-color-dark-15);
+    --label-color: var(--finder-color-dark-15);
+  }
+
+  &--invalid {
+    --accent-color: var(--finder-color-error);
+    --icon-color: var(--finder-color-error);
+    --label-color: var(--finder-color-error);
+  }
+
+  &:hover,
+  &--hovered {
+    --icon-color: var(--accent-color);
+    --label-color: var(--accent-color);
+  }
+
+  &__label {
+    @include element-text-regular-16;
+    color: var(--label-color);
+    user-select: none;
+  }
+}

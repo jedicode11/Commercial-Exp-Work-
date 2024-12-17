@@ -1,0 +1,45 @@
+@use 'sass:color';
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@mixin make-container-max-width {
+  @include make-container;
+  max-width: $page-content-width;
+}
+
+@mixin focus-outline {
+  outline: 5px solid rgba(162, 162, 162, 0.25);
+}
+
+@mixin color-alpha-shade-vars($input-rgb-color-var, $prefix, $shades) {
+  @each $shade in $shades {
+    #{$prefix}-#{$shade * 100}: rgba(var(#{$input-rgb-color-var}), #{$shade});
+  }
+}
+
+@mixin color-alpha-shade-values($input-color, $prefix, $shades) {
+  @each $shade in $shades {
+    #{$prefix}-#{$shade * 100}: #{ color.adjust($input-color, $alpha: - 1 * (1 - $shade))};
+  }
+}

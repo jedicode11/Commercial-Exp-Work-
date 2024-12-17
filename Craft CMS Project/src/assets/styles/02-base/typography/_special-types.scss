@@ -1,0 +1,193 @@
+// see definitions at https://www.figma.com/file/UBD14Sn7Yd4VSWWa64DDWA/Messe---Component-Library?node-id=2%3A42
+
+// Regular
+
+@mixin element-text-regular-16 {
+  font-family: var(--finder-font-family-content);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin element-text-regular-14 {
+  font-family: var(--finder-font-family-content);
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-regular {
+  font-family: var(--finder-font-family-content);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-regular-underlined {
+  font-family: var(--finder-font-family-content);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+  text-decoration-line: underline;
+}
+
+@mixin button-text-small-regular {
+  font-family: var(--finder-font-family-content);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-small-regular-underlined {
+  font-family: var(--finder-font-family-content);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-tiny-regular {
+  font-family: var(--finder-font-family-content);
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 400;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-tiny-regular-uppercase {
+  font-family: var(--finder-font-family-content);
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--finder-color-dark);
+}
+
+@mixin overline-big-regular {
+  font-family: var(--finder-font-family-content);
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--finder-color-dark);
+}
+
+@mixin overline-regular {
+  font-family: var(--finder-font-family-content);
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--finder-color-dark);
+}
+
+@mixin overline-small-regular {
+  font-family: var(--finder-font-family-content);
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--finder-color-dark);
+}
+
+// Bold
+
+@mixin element-text-bold-16 {
+  font-family: var(--finder-font-family-content);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin element-text-bold-14 {
+  font-family: var(--finder-font-family-content);
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-bold {
+  font-family: var(--finder-font-family-content);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-bold-underlined {
+  font-family: var(--finder-font-family-content);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-small-bold {
+  font-family: var(--finder-font-family-content);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-small-bold-underlined {
+  font-family: var(--finder-font-family-content);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-tiny-bold {
+  font-family: var(--finder-font-family-content);
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 700;
+  color: var(--finder-color-dark);
+}
+
+@mixin button-text-tiny-bold-uppercase {
+  font-family: var(--finder-font-family-content);
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--finder-color-dark);
+}
+
+@mixin overline-big-bold {
+  font-family: var(--finder-font-family-content);
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--finder-color-dark);
+}
+
+@mixin overline-bold {
+  font-family: var(--finder-font-family-content);
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--finder-color-dark);
+}
+
+@mixin overline-small-bold {
+  font-family: var(--finder-font-family-content);
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--finder-color-dark);
+}
