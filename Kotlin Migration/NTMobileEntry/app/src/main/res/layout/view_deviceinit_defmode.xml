@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/error_message"
+        style="@style/Text.Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:tag="/DEVICE_INIT_ID_NOT_AVAILABLE"
+        android:text="@string/DEVICE_INIT_ID_NOT_AVAILABLE"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/error_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/device_init_vertical_margin"
+        android:tag="/DEVICE_INIT_INPUT_LABEL"
+        android:text="@string/DEVICE_INIT_INPUT_LABEL" />
+
+    <de.dimedis.mobileentry.ui.view.FMEditView
+        android:id="@+id/editId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/device_init_vertical_margin"
+        android:inputType="number"
+        android:text="801" />
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/device_init"
+        style="@style/TextHeader"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:tag="UPDATE_BUTTON_LABEL"
+        android:text="@string/UPDATE_BUTTON_LABEL" />
+
+
+    <include
+        android:id="@+id/soft_ver"
+        layout="@layout/softversion"
+
+        android:layout_width="379dp"
+        android:layout_height="549dp"
+
+        android:layout_above="@+id/linearLayout10"
+        android:layout_below="@+id/device_init"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/ButtonGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="CANCEL_BUTTON_TEXT"
+            android:text="@string/CANCEL_BUTTON_TEXT" />
+
+        <Button
+            android:id="@+id/updateButton"
+            style="@style/ButtonGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="SOFTWARE_VERSIONS_MENU_BUTTON_TEXT"
+            android:text="@string/SOFTWARE_VERSIONS_MENU_BUTTON_TEXT" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/update_started"
+        style="@style/TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout10"
+        android:layout_centerHorizontal="true"
+        android:allowUndo="false"
+        android:paddingBottom="40dp"
+        android:tag="UPDATE_TEXT"
+        android:text="@string/UPDATE_TEXT"
+        android:textColor="@color/green_light"
+        android:visibility="invisible" />
+
+</RelativeLayout>

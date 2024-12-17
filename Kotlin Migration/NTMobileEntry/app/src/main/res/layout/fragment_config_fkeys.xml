@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fragment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_title"
+            style="@style/TextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="FKEY_CONFIG_TITLE"
+            android:text="@string/FKEY_CONFIG_TITLE" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_header"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/panel_functions"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.45">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_functions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/panel_keys"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.45">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_keys"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/configure_fkeys_cancel"
+                style="@style/ButtonGray"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="CANCEL_BUTTON_TEXT"
+                android:text="@string/CANCEL_BUTTON_TEXT" />
+
+            <Button
+                android:id="@+id/configure_fkeys_okay"
+                style="@style/ButtonGray"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="OK_BUTTON_TEXT"
+                android:text="@string/OK_BUTTON_TEXT" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
