@@ -1,0 +1,7 @@
+### clear representatives
+
+POST http://localhost:3030/sales/clear HTTP/1.1
+
+### clear postcodes
+
+POST http://localhost:3030/sales/clear_postcodes HTTP/1.1

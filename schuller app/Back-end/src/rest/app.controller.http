@@ -1,0 +1,30 @@
+### default GET
+
+GET http://localhost:3030/ HTTP/1.1
+
+### validate `pin` with valid pin (string)
+
+POST http://localhost:3030/pin HTTP/1.1
+content-type: application/json
+
+{
+  "pin": "6134"
+}
+
+### validate `pin` with valid pin (number)
+
+POST http://localhost:3030/pin HTTP/1.1
+content-type: application/json
+
+{
+  "pin": 6134
+}
+
+### validate `pin` with invalid pin
+
+POST http://localhost:3030/pin HTTP/1.1
+content-type: application/json
+
+{
+  "pin": "7777"
+}

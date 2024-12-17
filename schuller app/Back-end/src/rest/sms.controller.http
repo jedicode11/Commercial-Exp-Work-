@@ -1,0 +1,20 @@
+### incorrect GET usage
+
+GET http://localhost:3030/sms HTTP/1.1
+
+### send sms
+
+POST http://localhost:3030/sms/send HTTP/1.1
+content-type: application/json
+
+{
+  "location_code": "SK",
+  "last_name": "Georgiev",
+  "gender": "1",
+  "company": "Acme",
+  "country": "Germany",
+  "city": "",
+  "sales_id_": 190,
+  "zip_code_": "6804",
+  "ticket": "ABC123TICKET789XYZ"
+}

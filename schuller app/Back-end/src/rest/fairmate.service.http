@@ -1,0 +1,12 @@
+### Get user id via ticket code
+
+# GET https://shop3-fairmateapi.fairmate.de/fairs/houseforkitchen2022/tickets/MsKQGK2aBCp5d HTTP/1.1
+GET https://shop3-fairmateapi.fairmate.de/fairs/houseforkitchen2022/tickets/VvHPIK2WNEdzM HTTP/1.1
+content-type: application/json
+X-Api-Key: 6e8e819a81aa4a828ada08e9afd2517a
+
+### Get user via user id
+
+# GET https://shop3-fairmateapi.fairmate.de/swagger/#/Customers/get_customers_by_customer_id__id_ HTTP/1.1
+GET https://shop3-fairmateapi.fairmate.de/customers/by-customer-id/dim.a.shop3.2022072613-30-40.98346.13796.1 HTTP/1.1
+X-Api-Key: 6e8e819a81aa4a828ada08e9afd2517a
