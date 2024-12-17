@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">MobileEntry</string>
+
+    <string name="tv_home_selector_prompt">Please select {app_name} as a default launcher</string>
+
+
+    <plurals name="tv_code_count">
+        <item quantity="one">@string/SCAN_LOCAL_RECORDS_ONE</item>
+        <item quantity="other">@string/SCAN_LOCAL_RECORDS_MANY</item>
+    </plurals>
+
+    <string name="SCAN_INPUT_FIELD_TEXT">Please scan</string>
+    <string name="SCAN_PROMPT">Scan ticket code</string>
+
+    <string name="btn_details">Details</string>
+
+    <string name="message_unknown_error">Unknown server error. Check Internet connection or contact the support.</string>
+    <string name="message_lmlib_error">Local mode library failed.</string>
+    <string name="message_function_not_available">Function is not available</string>
+
+    <string name="cd_logo">Logo</string>
+    <string name="cd_menu">Menu</string>
+    <string name="cd_keyboard">Keyboard</string>
+    <string name="cd_mode_icon">Mode icon</string>
+
+
+    <string name="alert_title_exception">Exception</string>
+
+    <string name="codes_on_device">Codes on device:</string>
+
+
+    <string name="empty_entry">empty</string>
+    <string name="force_entry_successful">Ticket force entry successful</string>
+    <string name="force_entry_failed">Ticket force entry failed</string>
+
+
+    <string name="library_initialization_failed">Library initialization failed</string>
+
+    <string name="empty_text"></string>
+
+    <!-- barcode -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="DEVICE_SETTINGS_CAMERA_LABEL">Camera reader</string>
+    <string name="SOFTWARE_VERSIONS_CODES_ON_DEVICE_LABEL">Codes on device</string>
+    <string name="SPINNER_LOADING">Loading: </string>
+    <string name="SPINNER_PROGRESS">Performing: </string>
+    <string name="DEVICE_SETTINGS_PERMANENT_SCAN_MODE">Permanent scan</string>
+    <string name="lt_device_id"><![CDATA[<device_id>]]></string>
+    <string name="lt_otherUserSession_start_text"><![CDATA[<otherusersession_start_text>]]></string>
+    <!-- barcode -->
+</resources>

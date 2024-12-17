@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="HeaderView">
+        <attr name="hv_showStatus" format="boolean" />
+        <attr name="hv_showBorderName" format="boolean" />
+        <attr name="hv_showMenuButton" format="boolean" />
+    </declare-styleable>
+</resources>

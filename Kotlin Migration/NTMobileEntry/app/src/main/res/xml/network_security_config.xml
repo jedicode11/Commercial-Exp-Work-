@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <domain-config cleartextTrafficPermitted="true">
+                <domain includeSubdomains="true">ac50-122-177-251-224.ngrok.io/v1</domain>
+            </domain-config>
+            <certificates src="system" /> // could be used instead of domain-config probably
+        </trust-anchors>
+    </base-config>
+</network-security-config>

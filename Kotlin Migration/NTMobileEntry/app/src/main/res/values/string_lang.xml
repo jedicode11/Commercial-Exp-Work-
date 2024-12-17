@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="CANCEL_BUTTON_TEXT">Cancel</string>
+    <string name="CLOSE_BUTTON_TEXT">Close</string>
+    <string name="OK_BUTTON_TEXT">OK</string>
+    <string name="ABC_BUTTON_TEXT">abc</string>
+
+    <string name="APP_INIT_TITLE">Initialize MobileEntry</string>
+    <string name="APP_INIT_SCAN_LABEL">Scan INIT Code</string>
+    <string name="APP_INIT_ERROR">Invalid code</string>
+
+    <string name="CHOOSE_LANGUAGE_TITLE">Choose language</string>
+
+    <string name="DEVICE_INIT_TITLE">Device init</string>
+    <string name="DEVICE_INIT_SERVER_INFO">Connected to server:</string>
+    <string name="DEVICE_INIT_INPUT_LABEL">Please enter device ID:</string>
+
+    <string name="DEVICE_INIT_ID_USED_ERROR">This ID is already used</string>
+    <string name="DEVICE_INIT_ID_LABEL">ID:</string>
+    <string name="DEVICE_INIT_SINCE_LABEL">Since:</string>
+    <string name="DEVICE_INIT_LOCATION_LABEL">Location:</string>
+    <string name="DEVICE_INIT_USER_LABEL">User:</string>
+    <string name="DEVICE_INIT_SESSION_SINCE_LABEL">Session since:</string>
+    <string name="DEVICE_INIT_STEAL_ID_QUESTION">Use this ID and deactivate other device?</string>
+
+    <string name="SOFTWARE_VERSIONS_TITLE">Software versions</string>
+    <string name="SOFTWARE_VERSIONS_UPDATE_INFO">Updates available</string>
+    <string name="SOFTWARE_VERSIONS_APP_LABEL">App:</string>
+    <string name="SOFTWARE_VERSIONS_LIBRARY_LABEL">Library:</string>
+    <string name="SOFTWARE_VERSIONS_LANGUAGES_LABEL">Languages:</string>
+    <string name="SOFTWARE_VERSIONS_BORDERS_LABEL">Borders:</string>
+    <string name="SOFTWARE_VERSIONS_LOCAL_CONFIG_LABEL">Local Config</string>
+    <string name="SOFTWARE_VERSIONS_NONE_TEXT" />
+
+    <string name="TO_LOGIN_BUTTON_TEXT">Start Login</string>
+
+    <string name="LOGIN_TITLE">Login</string>
+    <string name="LOGIN_SCAN_LABEL">Scan login code</string>
+    <string name="LOGIN_FAILED_MESSAGE">Login failed</string>
+    <string name="LOGIN_USERNAME_INPUT_LABEL">Username</string>
+    <string name="LOGIN_PASSWORD_INPUT_LABEL">Password</string>
+    <string name="LOGIN_CODE_LOGIN_BUTTON_TEXT">Scan login code</string>
+    <string name="LOGIN_BUTTON_LABEL">Login</string>
+
+    <string name="CHOOSE_BORDER_TITLE">Choose location</string>
+
+    <string name="SCAN_ENTRY_TITLE">Entry</string>
+    <string name="SCAN_CHECKOUT_TITLE">Checkout</string>
+    <string name="SCAN_OK_TEXT">OK</string>
+    <string name="SCAN_NOT_OK_TEXT">No</string>
+    <string name="SCAN_LOCAL_RECORDS_ONE">code</string>
+    <string name="SCAN_LOCAL_RECORDS_MANY">codes</string>
+
+    <string name="HISTORY_TITLE">History</string>
+    <string name="HISTORY_TABLE_DATE_HEADER">Date</string>
+    <string name="HISTORY_TABLE_ACTION_HEADER">Action</string>
+    <string name="HISTORY_TABLE_LOCATION_HEADER">Location</string>
+    <string name="HISTORY_OFFLINE_MESSAGE">The device is offline: no history available.</string>
+    <string name="HISTORY_NOT_AVAILABLE_MESSAGE">No history available.</string>
+    <string name="HISTORY_LOADING">Loading: History</string>
+
+    <string name="FORCE_ENTRY_BUTTON_LABEL">Force Entry</string>
+    <string name="FORCE_ENTRY_BUTTON_TEXT">Force Entry</string>
+    <!--<string name="FORCE_ENTRY_BUTTON_PROGRESS">Performing: Force Entry</string>-->
+
+    <string name="MENU_TITLE">Menu</string>
+    <string name="CHOOSE_BORDER_MENU_BUTTON_TEXT">Location</string>
+    <string name="HISTORY_MENU_BUTTON_TEXT">History</string>
+    <string name="SCAN_ENTRY_MENU_BUTTON_TEXT">Entry</string>
+    <string name="SCAN_CHECKOUT_MENU_BUTTON_TEXT">Checkout</string>
+    <string name="LOGOUT_MENU_BUTTON_TEXT">Logout</string>
+    <string name="FKEY_CONFIG_MENU_BUTTON_TEXT">Configure F-Keys</string>
+    <string name="NETWORK_SETTINGS_MENU_BUTTON_TEXT">Online settings</string>
+    <string name="VOID_TICKET_MENU_BUTTON_TEXT">Void tickets</string>
+    <string name="SOFTWARE_VERSIONS_MENU_BUTTON_TEXT">Update</string>
+    <string name="LOGFILE_MENU_BUTTON_TEXT">Logfile</string>
+    <string name="DEVICE_SETTINGS_MENU_BUTTON_TEXT">Device settings</string>
+    <string name="EXIT_APP_MENU_BUTTON_TEXT">Exit app</string>
+    <string name="PHONE_MENU_BUTTON_TEXT">Phone</string>
+    <string name="RESET_DEVICE_MENU_BUTTON_TEXT">Device reset</string>
+    <string name="SOFTWARE_VERSIONS_APP_VERSION_UNKNOWN_TEXT">unknown</string>
+    <string name="PUSH_CODE_MENU_BUTTON_TEXT">Push Local codes</string>
+    <string name="PUSH_CODE_TITLE">Send local codes</string>
+    <string name="PUSH_CODE_CODES_ON_DEVICE_LABEL">Codes on device:</string>
+    <string name="PUSH_CODE_INFO_TEXT">Click to send locally stored codes to the server.</string>
+    <string name="PUSH_CODE_BUTTON">Send codes</string>
+    <string name="PUSH_CODE_OFFLINE_TEXT">The device is offline, codes can not be sent.</string>
+    <string name="PUSH_CODE_NOCODES_TEXT">No codes on the device, nothing to do.</string>
+
+
+    <string name="DELETE_CODES_TITLE">Delete local codes</string>
+    <string name="DELETE_CODES_CODES_ON_DEVICE_LABEL">Codes on device:</string>
+    <string name="DELETE_CODES_INFO_TEXT">Click to delete locally stored codes. This may cause loss of admission information!</string>
+    <string name="DELETE_CODES_NOCODES_TEXT">No codes on the device, nothing to do.</string>
+    <string name="DELETE_CODES_BUTTON">Delete codes</string>
+    <string name="DELETE_CODES_MENU_BUTTON_TEXT">Delete codes</string>
+
+    <string name="LOGOUT_TITLE">Logout</string>
+    <string name="LOGOUT_QUESTION_TEXT">Do you really want to log out?</string>
+
+    <string name="FKEY_CONFIG_TITLE">Configure F-Keys</string>
+
+    <string name="NETWORK_SETTINGS_TITLE">Online settings</string>
+    <string name="NETWORK_SETTINGS_LOCAL_SCAN_TOGGLE_LABEL">Local scan:</string>
+
+    <string name="VOID_TICKET_TITLE">Void tickets</string>
+    <string name="VOID_TICKET_SUCCESS_MESSAGE">Ticket voided</string>
+    <string name="VOID_TICKET_FAIL_MESSAGE">Failed to void ticket</string>
+    <string name="VOID_TICKET_BUTTON_LABEL">Void ticket</string>
+
+    <string name="UPDATE_BUTTON_LABEL">Update</string>
+
+    <string name="LOGFILE_TITLE">Logfile</string>
+    <string name="LOGFILE_TOGGLE_LABEL">Write local logfile:</string>
+
+    <string name="DEVICE_SETTINGS_TITLE">Device settings</string>
+    <string name="DEVICE_SETTINGS_SOUND_LABEL">Sound:</string>
+    <string name="DEVICE_SETTINGS_VIBRATION_LABEL">Vibration:</string>
+    <string name="DEVICE_SETTINGS_BRIGHTNESS_LABEL">Brightness:</string>
+
+    <string name="EXIT_APP_TITLE">Exit app</string>
+    <string name="EXIT_APP_QUESTION_TEXT">Do you really want to exit?</string>
+
+    <string name="PHONE_TITLE">Phone</string>
+    <string name="PHONE_QUESTION_TEXT">Switch to phone?</string>
+
+    <string name="RESET_DEVICE_TITLE">Device reset</string>
+    <string name="RESET_DEVICE_QUESTION_TEXT">Do you really want to reset the device?</string>
+
+    <string name="ERROR_PAGE_TITLE">Error / Exception</string>
+    <string name="ERROR_MESSAGE_INTRO">An error occurred</string>
+
+    <string name="MESSAGE_INVALID_SESSION">The active session is invalid - logging out</string>
+
+    <string name="SCAN_STATUS_ONLINE">Online</string>
+    <string name="SCAN_STATUS_OFFLINE">Offline</string>
+    <string name="SCAN_STATUS_LOCAL">Local scan</string>
+
+    <string name="TOGGLE_ON_TEXT">On</string>
+    <string name="TOGGLE_OFF_TEXT">Off</string>
+
+    <string name="REGULATOR_MIN_TEXT">0</string>
+    <string name="REGULATOR_MAX_TEXT">Max.</string>
+    <!-- ADDED -->
+    <string name="DEVICE_INIT_ID_NOT_AVAILABLE">ID not available</string>
+
+    <string name="UPDATE_BUTTON_TEXT">Update</string>
+    <string name="SCAN_STATUS_LOCAL_OFF">Off</string>
+    <string name="SCAN_STATUS_LOCAL_ON">On</string>
+
+    <string name="UPDATE_TEXT">Update started&#8230;</string>
+
+</resources>
