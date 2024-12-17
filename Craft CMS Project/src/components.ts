@@ -1,0 +1,7 @@
+export { default as Slider } from '@/components/elements/Slider.vue'
+export { default as EventsView } from '@/components/modules/event/EventsView.vue'
+export { default as EventDetails } from '@/components/modules/event-details/EventDetails.vue'
+export { default as SearchView } from '@/components/modules/search/SearchView.vue'
+export { default as SpeakerDetails } from '@/components/modules/speaker/SpeakerDetails.vue'
+export { default as SessionDetails } from '@/components/modules/session/SessionDetails.vue'
+export { default as SpeakerOverview } from '@/components/elements/SpeakerOverview.vue'
