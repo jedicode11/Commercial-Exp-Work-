@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextHeader"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:tag="MENU_TITLE"
+        android:text="@string/MENU_TITLE" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout7"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/ButtonGray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="CANCEL_BUTTON_TEXT"
+            android:text="@string/CANCEL_BUTTON_TEXT" />
+
+        <Button
+            android:id="@+id/ok"
+            style="@style/ButtonGray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="CANCEL_BUTTON_TEXT"
+            android:text="@string/CANCEL_BUTTON_TEXT"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

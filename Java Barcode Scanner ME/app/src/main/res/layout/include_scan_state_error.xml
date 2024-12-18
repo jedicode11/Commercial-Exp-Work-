@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.ScanActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="32dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:tag="SCAN_NOT_OK_TEXT"
+        android:text="@string/SCAN_NOT_OK_TEXT"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_500"
+        app:drawableLeftCompat="@drawable/scan_error"
+        app:drawableStartCompat="@drawable/scan_error" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_middle" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:freezesText="true"
+        android:gravity="center"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_80"
+        tools:text="infotext\n2 lines possible" />
+
+    <Button
+        android:id="@+id/btn_details"
+        style="@style/Widget.MobileEntry.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_details"
+        android:theme="@style/ThemeOverlay.MobileEntry.Button.GreyLight" />
+
+</LinearLayout>

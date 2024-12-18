@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fieldError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/grey_light"
+        android:orientation="vertical"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Text.Red.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="DEVICE_INIT_ID_USED_ERROR"
+            android:text="@string/DEVICE_INIT_ID_USED_ERROR"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="DEVICE_INIT_ID_LABEL"
+                android:text="@string/DEVICE_INIT_ID_LABEL" />
+
+            <TextView
+                android:id="@+id/device_id"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lt_device_id" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="DEVICE_INIT_SINCE_LABEL"
+                android:text="@string/DEVICE_INIT_SINCE_LABEL" />
+
+            <TextView
+                android:id="@+id/since"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="...." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label4"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="DEVICE_INIT_LOCATION_LABEL"
+                android:text="@string/DEVICE_INIT_LOCATION_LABEL" />
+
+            <TextView
+                android:id="@+id/location"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="...." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="DEVICE_INIT_USER_LABEL"
+                android:text="@string/DEVICE_INIT_USER_LABEL" />
+
+            <TextView
+                android:id="@+id/user"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="...." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="DEVICE_INIT_SESSION_SINCE_LABEL"
+                android:text="@string/DEVICE_INIT_SESSION_SINCE_LABEL"
+
+                />
+
+            <TextView
+                android:id="@+id/session_since"
+                style="@style/TextSmallRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lt_otherUserSession_start_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/fieldError"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:tag="DEVICE_INIT_SESSION_SINCE_LABEL"
+        android:text="@string/DEVICE_INIT_STEAL_ID_QUESTION" />
+
+
+</RelativeLayout>

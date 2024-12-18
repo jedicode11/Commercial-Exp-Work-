@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MobileEntry" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.MobileEntry.ScanActivity">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:colorBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.MobileEntry" parent="ThemeOverlay.AppCompat" />
+
+    <style name="ThemeOverlay.MobileEntry.Button" />
+
+    <style name="ThemeOverlay.MobileEntry.Button.GreyLight">
+        <item name="colorButtonNormal">@color/grey_light</item>
+    </style>
+
+    <style name="Widget.MobileEntry.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_100</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/grey_dark</item>
+    </style>
+
+    <style name="Widget.MobileEntry.Button.Flat">
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="Widget.MobileEntry.Button.Flat.Function">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="style_font" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="FMTextAppearance" parent="android:TextAppearance">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="fontPath">fonts/verdana.ttf</item>
+        <item name="android:textColor">@color/grey_dark</item>
+    </style>
+
+    <style name="FMTextAppearance.Smallest">
+        <item name="android:textSize">@dimen/font_size_smallest</item>
+    </style>
+
+
+    <style name="FMTextAppearance.Small">
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+
+    <style name="FMTextAppearance.Large">
+        <item name="android:textSize">@dimen/font_size_large</item>
+    </style>
+
+    <style name="FMTextAppearance.Biggest">
+        <item name="android:textSize">@dimen/font_size_biggest</item>
+    </style>
+
+    <style name="FMTextAppearance.Red">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="FMTextAppearance.Green">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+
+    <style name="FMTextAppearance.Large.Green">
+        <item name="android:textColor">@color/green_light</item>
+    </style>
+
+    <style name="FMTextAppearance.Biggest.Green">
+        <item name="android:textColor">@color/green_light</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textAppearance">@style/FMTextAppearance</item>
+    </style>
+
+
+    <style name="TextBiggest" parent="@style/Text">
+        <item name="android:textAppearance">@style/FMTextAppearance.Biggest</item>
+    </style>
+
+
+    <style name="TextLarge" parent="@style/Text">
+        <item name="android:textAppearance">@style/FMTextAppearance.Large</item>
+    </style>
+
+    <style name="TextSmall" parent="@style/Text">
+        <item name="android:textAppearance">@style/FMTextAppearance.Small</item>
+    </style>
+
+    <style name="TextSmallRed">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="TextSmallest" parent="@style/Text">
+        <item name="android:textAppearance">@style/FMTextAppearance.Smallest</item>
+    </style>
+
+    <style name="Text.Red">
+        <item name="android:textAppearance">@style/FMTextAppearance.Red</item>
+    </style>
+
+    <style name="Text.Red.Bold">
+        <item name="android:textAppearance">@style/FMTextAppearance.Red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Green">
+        <item name="android:textAppearance">@style/FMTextAppearance.Green</item>
+    </style>
+
+    <style name="TextLarge.Green">
+        <item name="android:textAppearance">@style/FMTextAppearance.Large.Green</item>
+    </style>
+
+    <style name="TextBiggest.Green">
+        <item name="android:textAppearance">@style/FMTextAppearance.Biggest.Green</item>
+    </style>
+
+
+    <style name="TextHeader" parent="@style/TextLarge.Green">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textAppearance">@style/FMTextAppearance.Large.Green</item>
+    </style>
+
+
+    <style name="TextBiggest.Red">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="ButtonGray" parent="@style/Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_gray</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="ButtonGreen" parent="@style/Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_gray</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+    </style>
+
+    <style name="FMbar" parent="@style/ThemeOverlay.AppCompat.Light">
+
+
+    </style>
+
+    <style name="Switch">
+        <item name="android:colorForeground">@color/red</item>
+        <item name="colorAccent">@color/green_light</item>
+        <item name="colorControlActivated">@color/green_light</item>
+        <item name="colorSwitchThumbNormal">@color/red</item>
+    </style>
+
+    <style name="SeekBar">
+        <item name="android:maxHeight">400sp</item>
+        <item name="android:indeterminate">false</item>
+    </style>
+
+</resources>
