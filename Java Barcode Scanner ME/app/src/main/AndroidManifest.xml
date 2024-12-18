@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACTION_INSTALL_PACKAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <queries>
+        <package android:name="kr.co.bluebird.android.bbapi.barcodelibconnector" />
+    </queries>
+
+    <application
+        android:name=".MobileEntryApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mobileentry"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="33">
+
+        <activity
+            android:name=".ui.HomeSelectorActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            tools:ignore="Instantiatable">
+            <intent-filter android:exported="false">
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:exported="true" />
+                <category
+                    android:name="android.intent.category.LAUNCHER"
+                    android:exported="true" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.HomeActivity"
+            android:clearTaskOnLaunch="true"
+            android:enabled="false"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            tools:ignore="Instantiatable">
+
+            <intent-filter android:exported="false">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.FakeHomeActivity"
+            android:enabled="false"
+            android:exported="true"
+            tools:ignore="Instantiatable">
+            <intent-filter android:exported="false">
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:exported="true" />
+
+                <category
+                    android:name="android.intent.category.HOME"
+                    android:exported="true" />
+                <category
+                    android:name="android.intent.category.DEFAULT"
+                    android:exported="true" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.InitActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".ui.ScanActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.MobileEntry.ScanActivity"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".ui.MenuActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.DeviceSettingsActivity"
+            android:exported="true"
+            tools:ignore="MissingClass" />
+
+        <activity
+            android:name=".barcode.BarcodeCaptureActivity"
+            android:exported="true"
+            android:label="Read Barcode"
+            android:noHistory="true" />
+
+        <service
+            android:name=".backend.BackendService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".service.HeartbeatService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name=".receiver.HeartbeatWakefulReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            tools:ignore="Instantiatable" />
+
+        <provider
+            android:name=".db.content_provider.DataContentProvider"
+            android:authorities="de.dimedis.mobileentry.db.content_provider"
+            android:exported="true"
+            android:readPermission="true"
+            android:writePermission="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:exported="true"
+            android:value="8aba81ef954ae8b097ae10107346a2fbf002ad94" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:exported="true"
+            android:value="false" />
+
+        <uses-library
+            android:name="device.sdk"
+            android:required="true" />
+    </application>
+
+</manifest>
